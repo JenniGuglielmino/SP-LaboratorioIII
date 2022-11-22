@@ -1,6 +1,4 @@
-
 import Anuncio_Autos from "./anuncio_autos.js";
-import { getLocalStorageData, setLocalStorageData } from "./localStorage.js";
 
 export function createEntity(newEntity) {
     console.log("createEntity", newEntity);

@@ -1,0 +1,64 @@
+{
+  "autos": [
+    {
+      "id": 1,
+      "titulo": "Nissan",
+      "transaccion": "Alquiler",
+      "descripcion": "Tiida",
+      "precio": "1500000",
+      "puertas": "5",
+      "kms": "80000",
+      "potencia": "250"
+    },
+    {
+      "id": 2,
+      "titulo": "Toyota",
+      "transaccion": "Venta",
+      "descripcion": "Corolla",
+      "precio": "250000",
+      "puertas": "2",
+      "kms": "5",
+      "potencia": "36"
+    },
+    {
+      "id": 3,
+      "titulo": "Fiat",
+      "transaccion": "Alquiler",
+      "descripcion": "147",
+      "precio": "250000",
+      "puertas": "5",
+      "kms": "6",
+      "potencia": "33"
+    },
+    {
+      "id": 4,
+      "titulo": "Ferrari",
+      "transaccion": "Venta",
+      "descripcion": "Mondial",
+      "precio": "250000",
+      "puertas": "5",
+      "kms": "0",
+      "potencia": "30"
+    },
+    {
+      "id": 5,
+      "titulo": "Renault",
+      "transaccion": "Alquiler",
+      "descripcion": "19",
+      "precio": "25000000",
+      "puertas": "5",
+      "kms": "10000",
+      "potencia": "35"
+    },
+    {
+      "id": 6,
+      "titulo": "Volkswagen",
+      "transaccion": "Alquiler",
+      "descripcion": "Gol",
+      "precio": "300001",
+      "puertas": "2",
+      "kms": "40000",
+      "potencia": "40"
+    }
+  ]
+}

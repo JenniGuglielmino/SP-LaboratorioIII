@@ -1,24 +1,25 @@
-
-
 function createTable(data){
     const table = document.createElement('table');
-    table.appendChild(createtHead(data[0]));
-    data.forEach(item => {
-        table.appendChild(createTBody(item));
-    });
-
+    if(data.length > 0){
+        table.setAttribute('class', 'table table-bordered');
+        table.appendChild(createtHead(data));
+        data.forEach(item => {
+            table.appendChild(createTBody(item));
+        });
+    }
     document.getElementById('dynamicTable').appendChild(table);
 }
 
 function createtHead(data){
     const thead = document.createElement('thead');
-    const objectKeys = Object.keys(data);
+    const objectKeys = Object.keys(data[0]);
     const tr = document.createElement('tr');
     tr.style.backgroundColor = '#f2f2f2';
 
     objectKeys.forEach(key => {
         if(key !== 'id'){
             const th = document.createElement('th');
+            th.setAttribute('class', 'col')
             th.appendChild(document.createTextNode(key));
             tr.appendChild(th);
         }
@@ -51,7 +52,6 @@ function updateTable(data){
         while(table.hasChildNodes()){
             table.removeChild(table.firstChild);
         }
-
         createTable(data);
     }
 }

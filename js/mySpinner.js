@@ -1,14 +1,25 @@
+export const divSpinner = document.getElementById("spinner");
 
-export default function toggleSpinner(){
-    const div = document.getElementById('spinnerCont');
-    const divAds = document.getElementById('dynamicTable');
-    
-    if (div.style.display == 'none') {
-        div.style.display = 'flex';
-        divAds.style.display = 'none';
+const getSpinner = () => {
+    console.log('Inside spinner function');
+    console.log(divSpinner);
+    let spinner = document.createElement('img');
+    spinner.setAttribute('src', './src/Spinning wheel.gif');
+    spinner.setAttribute('alt', 'Spinner');
+    divSpinner.appendChild(spinner);
+}
+
+const clearSpinner = () => {
+    console.log('Clearing spinner.');
+    while(divSpinner.hasChildNodes()){
+        divSpinner.removeChild(divSpinner.firstChild);
     }
-    else {
-        div.style.display = 'none';
-        divAds.style.display = 'block';
+}
+
+export const ToggleSpinner = (bool) => {
+    if (bool){
+        getSpinner();
+    }else{
+        clearSpinner();
     }
 }

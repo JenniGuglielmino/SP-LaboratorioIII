@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/script.js" type="module"></script>
+    <script src="./js/bootstrap.min.js" type="module"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Administration</title>
 </head>
 <body class="hiddenBody">
@@ -47,7 +49,7 @@
                 <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese una descripcion" required><br>
 
                 <label for="price">Precio</label><br>
-                <input type="number" name="precio" id="precio" placeholder="Ingrese un precio" min="250000" max="2500000" required><br>
+                <input type="number" name="precio" id="precio" placeholder="Ingrese un precio" min="250000" max="25000000" required><br>
 
                 <div class='mismaLinea'>
                     <img src="./src/noun-doors-car-2391626.png" alt="Puerta" width="50" height="50">
@@ -58,36 +60,77 @@
                     <input type="number" name="potencia" id="potencia" placeholder="Potencia" min="30" max="50" required><br>
                 </div>
 
-        <section id="buttons">
-            <button type="submit" id="buttonSubmit" class="buttonForm">
-                <h4>Guardar</h4>
-            </button>
-    
-            <button type="reset" id="buttonCancel" class="buttonForm">
-                <h4>Cancelar</h4>
-            </button>
-    
-            <button type="submit" id="buttonModify" class="buttonForm hidden">
-                <h4>Modificar</h4>
-            </button>
-    
-            <button type="button" id="buttonDelete" class="buttonForm hidden">
-                <h4>Eliminar</h4>
-            </button>
-        </section>
+                <section id="buttons" class="row p-2 justify-content-md-center">
+                    <button type="submit" id="buttonSubmit" class="col-md-3 bg-secondary">
+                        <h6>Guardar</h6>
+                    </button>
+            
+                    <button type="reset" id="buttonCancel" class="col-sm-3 bg-secondary">
+                        <h6>Cancelar</h6>
+                    </button>
+            
+                    <button type="submit" id="buttonModify" class="col-sm-3 bg-secondary hidden">
+                        <h6>Modificar</h6>
+                    </button>
+            
+                    <button type="button" id="buttonDelete" class="col-sm-3 bg-secondary hidden">
+                        <h6>Eliminar</h6>
+                    </button>
+                </section>
 
             </form>
         </fieldset>
 
-        <div id="spinnerCont">
-            <img src="./src/Spin-1s-200px.gif" id="mySpinner" alt="spinner">
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-8 rounded">
+                    <form>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center pt-5">
+                                <div class="col-4" align="center">
+                                    <label>Filtro por transaccion</label>
+                                </div>
+                                <div class="col-4" align="center">
+                                    <label>Promedio</label>
+                                </div>
+                            </div>
+    
+                            <div class="row justify-content-center pb-5">
+                                <select class="col-4 rounded" name="FTransaccion" id="FTransaccion" align="center">
+                                    <optgroup label="Transaccion">
+                                        <option value="All">Todos</option>
+                                        <option value="Alquiler">Alquiler</option>
+                                        <option value="Venta">Venta</option>
+                                    </optgroup>
+                                </select>
+    
+                                <input class="col-4 rounded" type="text" placeholder="Promedio" id="Average" align="center">
+                            </div>
+                            <div class="row justify-content-center pb-5">
+                                <div class="col-10 justify-content-center text-center">
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="titulo" checked>Titulo</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="transaccion" checked>Transaccion</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="descripcion" checked>Descripcion</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="precio" checked>Precio</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="puertas" checked>Puertas</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="kms" checked>Kms</label>
+                                    <label class="text-black ml-100"><input class="myCheck" type="checkbox"  name="potencia" checked>Potencia</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div align="center" id="spinner">
         </div>
 
         <br><br><br><br>
         <section>
-            <div id="dynamicTable" class="table">
+                <div id="dynamicTable" class="table">
 
-            </div>
+                </div>
         </section>
     </main>
     <footer class="footer">

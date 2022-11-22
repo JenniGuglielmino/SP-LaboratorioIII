@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+    margin-left: 20px;
+}
+
+nav {
+        background: transparent;
+        height: 100px;
+        align-items:center;
+        align-content: flex-end;
+}
+
+.titulo{
+    background-color: white;
+    color:#2e2e2e;
+    text-align: center;
+}
+
+nav a{
+    display: block;
+    padding: 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+  }
+
+  nav a:hover{
+    border-bottom: 3px solid #51918a;
+    transition: 0.6s;
+  }
+
+  .logo img
+  { 
+    height:80px;
+    float: left;
+   }
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color:cadetblue;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    color: white!important;
+}
+
+.links{
+max-height: 100px;
+color: white;
+}
+
+.columna {
+    justify-content: space-around;
+    display: flex;
+    text-decoration: none;
+    text-decoration-line: none;
+    flex-direction: row;
+    background-color:rgb(26, 89, 152);
+
+}
+
+.linea {
+    justify-content: space-around;
+    display: inline-flex;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+#copyright{
+    display: inline;
+    margin-left: 50%;
+}
+
+.imgBody{
+    background-image: url("../src/autoImgPcipal.jpg");
+    background-color: cadetblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    width: 100vw;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+.anunciosCreados{
+    height: 50vh;
+    width: 100vw;
+}
+
+.mainText {
+    justify-content: start;
+    padding-left: 5%;
+    padding-top: 25%;
+}
+
+.anuncios{
+    background-color: #f2f2f2;
+    color: #000000;
+    width: 15%;
+    height: 15%;
+    margin: 15px 10px 10px 10px;
+    display: inline-block;
+    padding: 5px;
+    border: solid #2e2e2e 0.4px;
+}
+
+.hidden{
+    display:none;
+}
+
+#dynamicTable {
+    justify-content: center;
+    display: flex;
+}
+
+th {
+    background-color: rgb(97, 147, 139);
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    padding: 10px;
+}
+td {
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    padding: 10px;
+    border: solid black 0,5px
+}
+
+table{
+    border: solid black 0,5px
+}
+
+input[type="text"], [type="number"]{
+    width: 25%;
+    background: rgb(213, 213, 213);
+    color: #555;
+    margin-bottom: 5px;
+    padding: 7px;
+    padding-left: 1rem;
+    font-size: 100%;
+    border-radius: 0.2rem;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"]{
+width: 100%;
+margin: 20px 20px 20px 0;
+padding: 0;
+border-radius: 0;
+display: inline-flex;
+
+} 
+
+form label{
+   text-align: left;
+}
+
+#spinnerCont {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+#mySpinner {
+    position: absolute;
+    top: 30%;
+}
+
+.mismaLinea {
+    justify-content: space-around;
+    display: inline-flex;
+    margin-left: 10px;
+}

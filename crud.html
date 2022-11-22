@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" type="module"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Administration</title>
+</head>
+<body class="hiddenBody">
+    <header>
+        <nav class="columna">
+            <div class="logo">
+                <img src="./src/logoAuto.png" alt="Logo">
+            </div>
+            <div class="links">
+                <a href="./index.html" class="btn-header">Nosotros</a>
+                <a href="./crud.html"  class="btn-header">Anuncios</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <section class="titulo">
+        <h1>Administracion</h1>
+    </section>
+    <section class="imgBody">
+
+    </section>
+    <main>
+        <fieldset align='center'>
+            <legend>Informacion del anuncio</legend>
+            <form>
+                <input type="hidden" name="idForm" id="id">
+
+                <label for="titulo">Titulo</label><br>
+                <input type="text" placeholder="Ingrese un titulo" name="titulo" id="titulo" required><br>
+
+                <label for="checkTransaccion">Transaccion</label><br>
+                <label for="textPrice">Venta</label><br>
+                <input type="radio" name="checkTransaccion" value="Venta" id="transaccion" checked>
+                <label for="textPrice">Alquiler</label><br>
+                <input type="radio" name="checkTransaccion" value="Alquiler" id="transaccion">
+                
+                <label for="descripcion">Descripcion</label><br>
+                <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese una descripcion" required><br>
+
+                <label for="price">Precio</label><br>
+                <input type="number" name="precio" id="precio" placeholder="Ingrese un precio" min="250000" max="2500000" required><br>
+
+                <div class='mismaLinea'>
+                    <img src="./src/noun-doors-car-2391626.png" alt="Puerta" width="50" height="50">
+                    <input type="number" name="puertas" id="puertas" placeholder="Puertas" min="2" max="5" required><br>
+                    <img src="./src/noun-speed-meter-5153180.png" alt="Kms" width="50" height="50">
+                    <input type="number" name="kms" id="kms" placeholder="Kms" min="0" max="200000" required><br>
+                    <img src="./src/noun-motor-2160938.png" alt="Potencia" width="50" height="50">
+                    <input type="number" name="potencia" id="potencia" placeholder="Potencia" min="30" max="50" required><br>
+                </div>
+
+        <section id="buttons">
+            <button type="submit" id="buttonSubmit" class="buttonForm">
+                <h4>Guardar</h4>
+            </button>
+    
+            <button type="reset" id="buttonCancel" class="buttonForm">
+                <h4>Cancelar</h4>
+            </button>
+    
+            <button type="submit" id="buttonModify" class="buttonForm hidden">
+                <h4>Modificar</h4>
+            </button>
+    
+            <button type="button" id="buttonDelete" class="buttonForm hidden">
+                <h4>Eliminar</h4>
+            </button>
+        </section>
+
+            </form>
+        </fieldset>
+
+        <div id="spinnerCont">
+            <img src="./src/Spin-1s-200px.gif" id="mySpinner" alt="spinner">
+        </div>
+
+        <br><br><br><br>
+        <section>
+            <div id="dynamicTable" class="table">
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="linea">
+                <a href="./index.html" class="btn-header">Nosotros</a>
+                <a href="./crud.html" class="btn-header">Anuncios</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
+        </nav>
+        <p id="copyright">Todos los derechos reservados 2022 &COPY;</p>
+</footer>
+</body>
+</html>
